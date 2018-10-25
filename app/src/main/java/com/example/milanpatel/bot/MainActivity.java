@@ -91,11 +91,11 @@ public class MainActivity extends AppCompatActivity {
 
                     Conversation service = new Conversation(Conversation.VERSION_DATE_2017_05_26);
                     //username and password
-                    service.setUsernameAndPassword("b8b92ec5-70a7-4680-bded-aa679d923255", "QOmcnRU36JjD");
+                    service.setUsernameAndPassword("username", "passsword");
 
                     InputData input = new InputData.Builder(inputmessage).build();
                     //workspace id
-                    MessageOptions options = new MessageOptions.Builder("bb9270cf-c4e1-4b16-a615-5dce9c36393e").input(input).context(context).build();
+                    MessageOptions options = new MessageOptions.Builder("workspace-id").input(input).context(context).build();
                     MessageResponse response = service.message(options).execute();
 
                     //Passing Context of last conversation
