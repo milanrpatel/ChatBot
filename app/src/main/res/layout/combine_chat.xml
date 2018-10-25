@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/recycler_view"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="52dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="3"
+            android:background="#eeeeee"
+            android:padding="6dp"
+            android:hint="Enter Message"
+            android:lines="1"
+            android:paddingLeft="10dp" />
+
+
+        <ImageButton
+            android:id="@+id/btn_send"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="0.6"
+            android:background="@null"
+            android:src="@mipmap/ic_send_round" />
+
+    </LinearLayout>
+
+</RelativeLayout>
