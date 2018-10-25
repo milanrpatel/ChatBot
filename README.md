@@ -1,2 +1,2 @@
 # ChatBot
-This is hte Bot for Charusat University,India.
+This is the Bot for Charusat University,India.
